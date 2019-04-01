@@ -1,8 +1,157 @@
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  body {
+    font-family:'Fire Sans', sans-serif;
+    background-color: #F0ECEE;
+  }
+  .topbar {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+
+  }
+    header h1{
+      background:#F0ECEE;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .menu ul {
+      display: flex;
+      flex-flow: column;
+      
+      padding: 10px 10px 10px 10px;
+      list-style: none;
+    }
+
+      #welcome {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column wrap;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+
+      section .find {
+        padding-top: 30px;
+      }
+
+      header ul{
+      font-size: 16px;
+      font-weight: 600;
+      }
+
+
+
+      header h1{
+        background:#F0ECEE;
+        font-size: 22px;
+        font-weight: 600;
+        padding-left: 10px;
+      }
+
+      a:link {
+          text-decoration: none;
+      }
+
+      header li a:link, section p {
+        color:#88898B;
+      }
+
+      header li a:hover {
+        color:#FF4850;
+      }
+
+      header li a.button, section a.button {
+        color: #F0ECEE;
+        background-color: #FF4850;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      header li .button:hover, section a.button:hover {
+        color: #FF4850;
+        background-color: #CCC;
+      }
+
+      header .highlight, header .current a{
+        color:#FF4850
+      }
+
+      section .highlight, section .current a{
+        color:#FF4850
+      }
+
+      section h1{
+        font-size: 30px;
+        font-weight: 800;
+      }
+
+      section p {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+
+  }
+
+
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+
 body {
   font-family:'Fire Sans', sans-serif;
 
   background-image: url("https://i.imgur.com/qZfCqSu.jpg");
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.topbar {
+  display: flex;
+  padding: 0px 40px 0px 40px;
+
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 0 10px 0 10px;
+}
+
+.menu {
+  margin-left: auto;
+  justify-content: space-around;
+
+}
+
+#welcome {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+section h1 {
+  width: 50%;
+}
+
+section p {
+  width: 42%;
+}
+
+section .find {
+  padding-top: 30px;
 }
 
 header ul{
@@ -10,35 +159,12 @@ font-size: 16px;
 font-weight: 600;
 }
 
-.container{
-  width: 80%;
-  margin:auto;
-  overflow:hidden;
-    flex-wrap: wrap;
-      display: flex;
-}
-#welcome p {
-  width: 50%;
-}
+
 
 header h1{
   background:#F0ECEE;
   font-size: 22px;
   font-weight: 600;
-}
-
-header ul{
-  margin:0;
-  padding:0;
-  display: flex;
-}
-
-header li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-  display: flex;
-
 }
 
 a:link {
@@ -58,23 +184,12 @@ header li a.button, section a.button {
   background-color: #FF4850;
   padding: 10px;
   border-radius: 5px;
+  width: auto;
 }
 
 header li .button:hover, section a.button:hover {
   color: #FF4850;
   background-color: #CCC;
-}
-  header #brand{
-    float:left;
-  }
-
-header #brand h1{
-  margin: 10;
-}
-
-header nav{
-  float:right;
-  margin-top:20px;
 }
 
 header .highlight, header .current a{
@@ -93,4 +208,6 @@ section h1{
 section p {
   font-size: 18px;
   font-weight: 500;
+}
+}
 }
